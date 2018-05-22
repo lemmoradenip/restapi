@@ -1,0 +1,12 @@
+D:\WEBSERVICE\restapi\restapi
+--output-path=obj\Release\netcoreapp2.0\
+--application-name=restapi
+--content-root=D:\WEBSERVICE\restapi\restapi
+--file=D:\WEBSERVICE\restapi\restapi\Views\Home\About.cshtml
+--file=D:\WEBSERVICE\restapi\restapi\Views\Home\Contact.cshtml
+--file=D:\WEBSERVICE\restapi\restapi\Views\Home\Index.cshtml
+--file=D:\WEBSERVICE\restapi\restapi\Views\Shared\Error.cshtml
+--file=D:\WEBSERVICE\restapi\restapi\Views\Shared\_Layout.cshtml
+--file=D:\WEBSERVICE\restapi\restapi\Views\Shared\_ValidationScriptsPartial.cshtml
+--file=D:\WEBSERVICE\restapi\restapi\Views\_ViewImports.cshtml
+--file=D:\WEBSERVICE\restapi\restapi\Views\_ViewStart.cshtml

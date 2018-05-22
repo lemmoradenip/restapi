@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Platforms>AnyCPU;x86</Platforms>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <StartupObject>restapi.Program</StartupObject>
+    <PreserveCompilationContext>true</PreserveCompilationContext>
+  
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>1701;1702;NU1701</NoWarn>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Views\MallsAccess\**" />
+    <Content Remove="Views\MallsAccess\**" />
+    <EmbeddedResource Remove="Views\MallsAccess\**" />
+    <None Remove="Views\MallsAccess\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\MallsAccessController.cs" />
+  </ItemGroup>
+
+
+  <!--<ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.1.0-preview2-final" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0-preview2-final" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0-preview2-final" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0-preview2-final" />
+  </ItemGroup>-->
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.1.0-rc1-final" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0-rc1-final" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0-rc1-final" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0-rc1-final" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+    <!--<DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="1.0.0-msbuild3-final" />-->
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NETCore.App" Version="2.1.0-preview2-26406-04" />
+  </ItemGroup>
+
+</Project>
